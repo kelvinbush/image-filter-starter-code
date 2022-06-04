@@ -42,7 +42,7 @@ import {deleteLocalFiles, filterImageFromURL} from './util/util';
         deleteLocalFiles([filteredPath]);
       });
     } catch (error) {
-      res.status(422).send(error);
+      res.status(422).send("Could not process image please try another");
     }
   });
   
